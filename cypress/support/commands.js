@@ -1,4 +1,12 @@
-// ***********************************************
+Cypress.Commands.add('login',(email,password)=>{
+    cy.visit('')
+    cy.get('#input-email').type(email)
+    cy.get('#input-password').type(password)
+    cy.get('input.btn.btn-primary').click()
+   })  
+
+
+
 // This example commands.js shows you how to
 // create various custom commands and overwrite
 // existing commands.
