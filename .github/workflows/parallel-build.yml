@@ -1,4 +1,4 @@
-name: run testcase using script
+name: parallel build
 on: push
 jobs:
   addToCart-run:
