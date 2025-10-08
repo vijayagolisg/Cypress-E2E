@@ -12,12 +12,12 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run test:addToCart
-      - name: Cypress Test Report
+
+      - name: cypress Test Reports
         uses: actions/upload-artifact@v4
         with:
-          name: Mochawesome HTML Report-Add To Cart
-          path: cypress/reports/html   
-
+          name: Mochawesome HTML Report-addtocart
+          path: cypress/reports/html 
   login-run:
     runs-on: ubuntu-24.04
     steps:
@@ -30,9 +30,8 @@ jobs:
         with:
           command: npm run test:login
 
-      - name: cypress Test Report
+      - name: cypress Test Reports
         uses: actions/upload-artifact@v4
         with:
-          name: Mochawesome HTML Report-Login Report
+          name: Mochawesome HTML Report-login
           path: cypress/reports/html
-      
