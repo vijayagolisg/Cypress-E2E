@@ -1,4 +1,4 @@
-name: parallel build
+name: parallel build with reports
 on: push
 jobs:
   addToCart-run:
