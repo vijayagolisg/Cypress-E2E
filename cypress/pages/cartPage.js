@@ -1,6 +1,6 @@
 export class cartPage{
     weblocators={
-        username:'#username1',
+        username:'#username',
         password:'#password',
         submit:'.btn',
         //msg:'div.post-header',
